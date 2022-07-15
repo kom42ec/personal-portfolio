@@ -1,0 +1,8 @@
+:root {
+  /* CSS HSL */
+  --space-cadet: hsla(227, 49%, 21%, 1);
+  --dark-cornflower-blue: hsla(222, 57%, 36%, 1);
+  --blue-yonder: hsla(224, 32%, 50%, 1);
+  --jet: hsla(27, 10%, 17%, 1);
+  --cultured: hsla(300, 9%, 96%, 1);
+}
