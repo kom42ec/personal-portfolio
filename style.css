@@ -36,13 +36,16 @@ ol {
 
 /* General Pages Styling */
 .page {
+}
+.container {
   height: 100vh;
-  padding: 5rem 15rem;
+  max-width: 170rem;
+  margin: 0 auto;
+  padding: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 #home {
   background-color: var(--space-cadet);
 }
@@ -59,7 +62,10 @@ ol {
   background-color: var(--jet);
 }
 
-/* Header */
+/******************************************* 
+*************** Header *********************
+********************************************/
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -74,18 +80,13 @@ ol {
 .nav-link:link,
 .nav-link:visited {
   text-decoration: none;
-  color: var(--dark-cornflower-blue);
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1;
   font-weight: 300;
   text-transform: uppercase;
 }
-.nav-link:hover,
-.nav-link:active {
-  color: var(--cultured);
-}
+
 .nav-link.current-link {
-  color: var(--cultured);
   font-weight: 400;
 }
 .nav-link.current-link::after {
@@ -100,24 +101,110 @@ ol {
   text-decoration: none;
   font-weight: 500;
 }
-/* Main */
+.main-btn:hover {
+  transform: scale(1.2);
+}
 
-/* Home Main */
+/************ Home Header *************/
+
+.home-header .nav-link:link,
+.home-header .nav-link:visited {
+  color: var(--dark-cornflower-blue);
+}
+
+.home-header .nav-link:hover,
+.home-header .nav-link:active {
+  color: var(--cultured);
+}
+
+.home-header .nav-link.current-link {
+  color: var(--cultured);
+}
+
+/************ About Header ************/
+
+.about-header .nav-link:link,
+.about-header .nav-link:visited {
+  color: var(--blue-yonder);
+}
+
+.about-header .nav-link:hover,
+.about-header .nav-link:active {
+  color: var(--cultured);
+}
+
+.about-header .nav-link.current-link {
+  color: var(--cultured);
+}
+
+/************ Skills Header ************/
+
+.skills-header .nav-link:link,
+.skills-header .nav-link:visited {
+  color: var(--blue-yonder);
+}
+
+.skills-header .nav-link:hover,
+.skills-header .nav-link:active {
+  color: var(--cultured);
+}
+
+.skills-header .nav-link.current-link {
+  color: var(--cultured);
+}
+
+/*********** Projects Header ***********/
+
+.projects-header .nav-link:link,
+.projects-header .nav-link:visited {
+  color: var(--blue-yonder);
+}
+
+.projects-header .nav-link:hover,
+.projects-header .nav-link:active {
+  color: var(--jet);
+}
+
+.projects-header .nav-link.current-link {
+  color: var(--jet);
+}
+
+/*********** Contact Header ************/
+
+.contact-header .nav-link:link,
+.contact-header .nav-link:visited {
+  color: var(--dark-cornflower-blue);
+}
+
+.contact-header .nav-link:hover,
+.contact-header .nav-link:active {
+  color: var(--cultured);
+}
+
+.contact-header .nav-link.current-link {
+  color: var(--cultured);
+}
+
+/**************************************
+**************** Main *****************
+***************************************/
+
+/*********** Home Main ****************/
 
 .home-main {
   display: grid;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 6fr 4fr;
   align-items: center;
 }
 
 .heading {
-  font-size: 14rem;
+  font-size: 11rem;
   margin-bottom: 4rem;
   line-height: 1.1;
 }
 
 .subtitle {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 1.5;
 }
 
@@ -144,7 +231,10 @@ ol {
   border-bottom: 1px solid var(--cultured);
   transform: scale(1.2);
 }
-/* Footer */
+
+/*******************************************
+***************** Footer *******************
+********************************************/
 
 footer {
   border-bottom: 1px solid var(--cultured);
@@ -152,4 +242,8 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--cultured);
+}
+
+.projects-footer {
+  border-bottom-color: var(--jet);
 }
