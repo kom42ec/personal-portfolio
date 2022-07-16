@@ -58,3 +58,36 @@ ol {
 #contact {
   background-color: var(--jet);
 }
+
+/* Header */
+
+.nav-list {
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  color: var(--blue-yonder);
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  color: var(--cultured);
+}
+.nav-link.current-link {
+  color: var(--cultured);
+}
+.nav-link.current-link::after {
+  content: ".";
+}
+
+/* Main */
+
+/* Footer */
+
+footer {
+  border-bottom: 1px solid var(--cultured);
+}
