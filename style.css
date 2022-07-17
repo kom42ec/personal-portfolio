@@ -26,6 +26,7 @@ body {
   font-weight: 400;
   line-height: 1;
   color: var(--cultured);
+  background-color: var(--space-cadet);
   overflow: hidden;
 }
 
@@ -35,8 +36,7 @@ ol {
 }
 
 /* General Pages Styling */
-.page {
-}
+
 .container {
   height: 100vh;
   max-width: 170rem;
@@ -46,10 +46,10 @@ ol {
   flex-direction: column;
   justify-content: space-between;
 }
-#home {
+/* #home {
   background-color: var(--space-cadet);
-}
-#about {
+} */
+/* #about {
   background-color: var(--dark-cornflower-blue);
 }
 #skills {
@@ -60,7 +60,7 @@ ol {
 }
 #contact {
   background-color: var(--jet);
-}
+} */
 
 /******************************************* 
 *************** Header *********************
@@ -86,44 +86,53 @@ ol {
   text-transform: uppercase;
 }
 
-.nav-link.current-link {
-  font-weight: 400;
+/* .nav-link.current-link {
+  font-weight: 400; 
 }
 .nav-link.current-link::after {
   content: ".";
+} */
+.main-nav-buttons {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
 }
 .main-btn {
   display: inline-block;
-  border: 1px solid var(--cultured);
+  /* border: 1px solid var(--cultured); */
   color: var(--cultured);
   font-size: 1.6rem;
-  padding: 1.2rem 2rem;
+  /* padding: 1.2rem 2rem; */
   text-decoration: none;
   font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--space-cadet);
 }
 .main-btn:hover {
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--cultured);
 }
 
 /************ Home Header *************/
 
-.home-header .nav-link:link,
-.home-header .nav-link:visited {
-  color: var(--dark-cornflower-blue);
+.nav-link:link,
+.nav-link:visited {
+  color: var(--blue-yonder);
 }
 
-.home-header .nav-link:hover,
-.home-header .nav-link:active {
+.nav-link:hover,
+.nav-link:active {
   color: var(--cultured);
 }
 
-.home-header .nav-link.current-link {
+.nav-link.current-link {
   color: var(--cultured);
 }
 
 /************ About Header ************/
 
-.about-header .nav-link:link,
+/* .about-header .nav-link:link,
 .about-header .nav-link:visited {
   color: var(--blue-yonder);
 }
@@ -135,11 +144,11 @@ ol {
 
 .about-header .nav-link.current-link {
   color: var(--cultured);
-}
+} */
 
 /************ Skills Header ************/
 
-.skills-header .nav-link:link,
+/* .skills-header .nav-link:link,
 .skills-header .nav-link:visited {
   color: var(--blue-yonder);
 }
@@ -155,7 +164,7 @@ ol {
 
 /*********** Projects Header ***********/
 
-.projects-header .nav-link:link,
+/* .projects-header .nav-link:link,
 .projects-header .nav-link:visited {
   color: var(--blue-yonder);
 }
@@ -167,11 +176,11 @@ ol {
 
 .projects-header .nav-link.current-link {
   color: var(--jet);
-}
+} */
 
 /*********** Contact Header ************/
 
-.contact-header .nav-link:link,
+/* .contact-header .nav-link:link,
 .contact-header .nav-link:visited {
   color: var(--dark-cornflower-blue);
 }
@@ -183,7 +192,7 @@ ol {
 
 .contact-header .nav-link.current-link {
   color: var(--cultured);
-}
+} */
 
 /**************************************
 **************** Main *****************
@@ -217,11 +226,11 @@ ol {
 
 .soc-link:link,
 .soc-link:visited {
-  color: var(--dark-cornflower-blue);
+  color: var(--blue-yonder);
   font-size: 3rem;
   font-weight: 400;
   text-decoration: none;
-  border-bottom: 1px solid var(--dark-cornflower-blue);
+  border-bottom: 1px solid var(--blue-yonder);
   padding-bottom: 1rem;
 }
 
@@ -232,6 +241,71 @@ ol {
   transform: scale(1.2);
 }
 
+/* Projects Main */
+.projects-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5rem;
+}
+.project {
+  border: 1px solid var(--blue-yonder);
+  padding: 3rem;
+}
+
+.project:hover {
+  border-color: var(--cultured);
+}
+.project-headline {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.project-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 2rem 0 3rem 0;
+}
+.tech-stack {
+  display: flex;
+}
+.tech {
+  border-left: 1px solid var(--blue-yonder);
+  padding: 0.6rem 1.2rem;
+}
+
+.tech-name {
+  display: inline-block;
+  padding-left: 0.6rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.fa-html5,
+.fa-css3-alt,
+.fa-js {
+  font-size: 1.4rem;
+}
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+}
+.live-link,
+.code-link {
+  display: inline-block;
+  color: var(--blue-yonder);
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--blue-yonder);
+}
+
+.live-link:hover,
+.code-link:hover {
+  color: var(--cultured);
+  border-bottom-color: var(--cultured);
+  transform: scale(1.2);
+}
 /*******************************************
 ***************** Footer *******************
 ********************************************/
@@ -242,8 +316,4 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--cultured);
-}
-
-.projects-footer {
-  border-bottom-color: var(--jet);
 }
