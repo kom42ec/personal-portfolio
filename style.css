@@ -339,8 +339,10 @@ textarea {
   border: none;
   padding: 0.6rem 1.2rem;
   border-bottom: 1px solid var(--blue-yonder);
-  color: var(--cultured);
+  color: var(--blue-yonder);
   font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 textarea {
@@ -400,7 +402,7 @@ textarea {
 }
 
 .socials-wrap {
-  padding: 5rem;
+  padding: 5rem 10rem 5rem 5rem;
   background-color: var(--blue-yonder);
   border: 1px solid var(--blue-yonder);
 }
@@ -408,7 +410,33 @@ textarea {
 .touch-text {
   font-size: 1.8rem;
   line-height: 1.6;
+  margin: 3rem 0;
 }
+
+.link-text {
+  font-size: 2.4rem;
+  line-height: 1.6;
+}
+
+.link-text a {
+  text-decoration: none;
+  color: var(--space-cadet);
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--cultured);
+}
+
+.contact-socials {
+  padding-top: 7rem;
+
+  color: var(--cultured);
+}
+.contact-socials .fa-brands,
+.contact-socials .fa-solid {
+  color: var(--cultured);
+  margin-right: 3rem;
+  font-size: 5rem;
+}
+
 /*******************************************
 ***************** Footer *******************
 ********************************************/
