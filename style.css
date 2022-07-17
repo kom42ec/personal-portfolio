@@ -90,7 +90,7 @@ ol {
   font-weight: 400; 
 }
 .nav-link.current-link::after {
-  content: ".";
+  content: "";
 } */
 .main-nav-buttons {
   display: flex;
@@ -306,6 +306,8 @@ ol {
   border-bottom-color: var(--cultured);
   transform: scale(1.2);
 }
+
+/* Contact Main */
 /*******************************************
 ***************** Footer *******************
 ********************************************/
