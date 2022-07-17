@@ -193,18 +193,18 @@ ol {
 
 .home-main {
   display: grid;
-  grid-template-columns: 6fr 4fr;
+  grid-template-columns: 5fr 5fr;
   align-items: center;
 }
 
 .heading {
-  font-size: 11rem;
+  font-size: 9rem;
   margin-bottom: 4rem;
   line-height: 1.1;
 }
 
 .subtitle {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.5;
 }
 
