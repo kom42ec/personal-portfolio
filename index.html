@@ -331,36 +331,67 @@
           </nav>
         </header>
         <main class="contact-main">
+          <section class="socials-wrap">
+            <h3 class="form-heading">Let's get in touch!</h3>
+            <p class="touch-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              voluptatum voluptate enim sapiente reiciendis ea nisi deleniti
+              quia cumque consectetur.
+            </p>
+            <div class="contact-socials">
+              <a href="#" class="contact-link">Twitter ↗</a>
+              <a href="#" class="contact-link">LinkedIn ↗</a>
+            </div>
+          </section>
           <section class="form-wrap">
             <form action="">
-              <h3>Hi Nikola!</h3>
-              <label for="name">My name is</label>
-              <input type="text" id="name" placeholder="Your Name Here" />
-              <label for="contact-reason"
-                >and I wanted to contact you regarding</label
-              >
-              <select name="reason" id="contact-reason">
-                <option value=""></option>
-                <option value="1">Building me an awesome website</option>
-                <option value="2">
-                  Giving you the opportunity to work at our company
-                </option>
-                <option value="3">
-                  Getting to know you better just because
-                </option>
-              </select>
-              <label for="email">Here's is my email address</label>
-              <input type="email" id="email" />
-              <label for="message">I just want to say</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="50"
-                rows="20"
-              ></textarea>
+              <h3 class="form-heading">Hi Nikola!</h3>
+
+              <div class="name-area">
+                <!-- <label for="name">My name is</label> -->
+                <input type="text" id="name" placeholder="My name is" />
+
+                <!-- <label for="email">Here's is my email address</label> -->
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="This is my email address"
+                />
+              </div>
+
+              <div class="reason-area">
+                <!-- <label for="contact-reason">I'm contacting you regarding</label> -->
+                <select name="reason" id="contact-reason" placeholder="Subject">
+                  <option class="null-option" value="">
+                    --choose and option--
+                  </option>
+                  <option value="1">
+                    I want you to build me an awesome website
+                  </option>
+                  <option value="2">
+                    There might be a web dev role for you in our team
+                  </option>
+                  <option value="3">
+                    Just to say 'Hi' and see how you are doing :)
+                  </option>
+                </select>
+              </div>
+
+              <div class="message-area">
+                <!-- <label for="message">I want to say</label> -->
+                <textarea
+                  placeholder="Here's my message"
+                  name="message"
+                  id="message"
+                  cols="50"
+                  rows="5"
+                  maxlength="1200"
+                  wrap="hard"
+                ></textarea>
+              </div>
+              <input class="form-btn" type="submit" value="Send Message ↗" />
             </form>
           </section>
-          <section class="socials-wrap"></section>
         </main>
         <footer class="contact-footer"></footer>
       </section>
