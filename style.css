@@ -321,20 +321,10 @@ ol {
   font-size: 4rem;
   /* margin-bottom: 3rem; */
 }
-label,
+
 input,
-textarea,
-select {
-  display: inline-block;
-  width: 100%;
-}
-label {
-  font-size: 2rem;
-  margin-bottom: 1.2rem;
-}
-input,
-select,
 textarea {
+  width: 100%;
   background-color: var(--space-cadet);
   border: none;
   padding: 0.6rem 1.2rem;
@@ -345,9 +335,6 @@ textarea {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-textarea {
-  border-bottom: 1px solid var(--blue-yonder);
-}
 input:focus {
   outline: none;
   border-bottom-color: var(--cultured);
