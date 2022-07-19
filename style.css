@@ -307,7 +307,7 @@ ol {
   transform: scale(1.2);
 }
 
-/* Contact Main */
+/**************************************************************** Contact Main */
 
 .contact-main {
   display: grid;
@@ -365,7 +365,7 @@ input::placeholder {
 input[type="text"],
 input[type="email"] {
   display: inline-block;
-  width: 50%;
+  flex-basis: 50%;
 }
 .name-area {
   margin-top: 3rem;
@@ -375,7 +375,7 @@ input[type="email"] {
   gap: 5rem;
 }
 .name-area,
-.reason-area,
+.subject-area,
 .email-area,
 .message-area {
   margin-bottom: 4rem;
